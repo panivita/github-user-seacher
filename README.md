@@ -8,10 +8,10 @@ Every time you type something (every word), the application will make a request 
 The profile information will contain avatar, user's GitHub profile information such as his status, location, and his membership information.
 
 #### Libraries and tools
-React
-React Router
-Moment
-Fortawesome icons
+1. React
+2. React Router
+3. Moment
+4. Fortawesome icons
 
 
 #### Deployment
