@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import "./media.css";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Switch, Route, Link } from "react-router-dom";
 import { AboutPage } from "./pages/about-page";
 import { UserDetailsPage } from "./pages/user-details-page";
 import { Header } from "./components/header";
@@ -11,12 +11,10 @@ import { SearchUserProvider } from "./Search-user-context";
 
 const App = () => {
   return (
-    <Router>
+    <>
       <nav className="navbar-container">
         <ul>
-          <li>
-            <a href="/">Home</a>
-          </li>
+          <Link to="/">Home</Link>
           <Link to="/About">About</Link>
         </ul>
       </nav>
@@ -35,7 +33,7 @@ const App = () => {
           <UserDetailsPage />
         </Route>
       </Switch>
-    </Router>
+    </>
   );
 };
 
